@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEECATRACHO</title>
+    <link rel="short cut icon" href="imagenes/icono.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div class="container">
+        <nav class="nav">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <a href="#" class="logo"></a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="nosotros.html" class="nav-link ">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="talleres.html" class="nav-link ">Talleres</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacto.html" class="nav-link ">Contacto</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="hero">
+    <div class="container">
+        <h2 class="h2-sub">
+            <a href="index.html">COFFEECATRACHO</a>
+            
+        </h2>
+        <h1 class="head">EL MEJOR CAFE ES DE HONDURAS
+        </h1>
+        <div class="he-des">
+            <h5>Conoce las mejores técnicas para preparar un buen cafe hondureño</h5>
+        </div>
+    </div>
+</section>
+
+
+<script>
+
+    const selectElement = function (element) {
+        return document.querySelector(element);
+    }
+
+
+    let menuToggle = selectElement('.menu-toggle');
+    let body = selectElement('body');
+
+    menuToggle.addEventListener('click', function () {
+        body.classList.toggle('open');
+    })
+
+</script>
+<body>
+    <main class="contenedor">
+        <h3 class="centrar-texto">Contáctanos</h3>
+
+        <div class="contacto-bg"></div>
+
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label>
+                <input class="campo__field" type="text" placeholder="Tu Nombre" id="nombre" />
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="email">E-mail</label>
+                <input class="campo__field" type="email" placeholder="Tu E-mail" id="email" />
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea class="campo__field campo__field--textarea" id="mensaje" placeholder="Comentarios"></textarea>
+            </div>
+
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton--primario" />
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h3 class="logo__nombre no-margin centrar-texto"><span class="logo__bold">Erlin Ramírez</span></h3>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">NOSOTROS</a>
+                    <a href="talleres.html" class="navegacion__enlace">TALLERES</a>
+                    <a href="contacto.html" class="navegacion__enlace">CONTACTO</a>
+                </nav>
+            </div>
+        </div>
+        <div class="colegio">
+            <p><h6>Instituto San Vicente de Paúl &copy; Derechos Reservados</h6></p>
+        </div>
+    </footer>
+   
+</body>
+</html>
